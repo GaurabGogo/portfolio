@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf .parcel-cache && parcel index.html",
+    "build": "rm -rf .parcel-cache && parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaurabGogo/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/GaurabGogo/portfolio/issues"
+  },
+  "homepage": "https://github.com/GaurabGogo/portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4",
+    "sass": "^1.87.0"
+  },
+  "dependencies": {
+    "core-js": "^3.41.0"
+  }
+}
