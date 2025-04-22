@@ -1,6 +1,7 @@
 // src/main.ts
 
 import * as THREE from "three";
+import "./styles/main.scss";
 
 // Scene setup
 const scene = new THREE.Scene();
