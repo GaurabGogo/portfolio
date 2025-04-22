@@ -1,29 +1,32 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "default": "index.html",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "rm -rf .parcel-cache && parcel index.html",
-    "build": "rm -rf .parcel-cache && parcel build index.html --dist-dir ./dist"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GaurabGogo/portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "xGOGO",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/GaurabGogo/portfolio/issues"
   },
   "homepage": "https://github.com/GaurabGogo/portfolio#readme",
   "devDependencies": {
-    "parcel": "^2.14.4",
-    "sass": "^1.87.0"
+    "@types/three": "^0.175.0",
+    "sass": "^1.87.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1"
   },
   "dependencies": {
-    "core-js": "^3.41.0"
+    "core-js": "^3.41.0",
+    "three": "^0.175.0"
   }
 }
