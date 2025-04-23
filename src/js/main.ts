@@ -177,7 +177,6 @@ gui.add(options, "intensity", 0, 1);
 let step = 0;
 const mousePosition = new THREE.Vector2();
 const rayCaster = new THREE.Raycaster();
-const sphereId = sphere.id;
 const clock = new THREE.Clock();
 
 window.addEventListener("mousemove", (e: MouseEvent) => {
@@ -204,9 +203,6 @@ function animate(time: number) {
   const intersects = rayCaster.intersectObjects(scene.children);
 
   for (const intersect of intersects) {
-    if (intersect.object.id === sphereId) {
-      (intersect.object as THREE.Mesh).material.color.set(0xff0000);
-    }
     if (intersect.object.name === "theBox") {
       intersect.object.rotation.x = time / 1000;
       intersect.object.rotation.y = time / 1000;
